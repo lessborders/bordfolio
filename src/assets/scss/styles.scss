@@ -1,4 +1,5 @@
 @import "_variables.scss";
+@import "_fonts.scss";
 
 @import "../vendor/fontawesome/scss/fontawesome.scss";
 @import "../vendor/fontawesome/scss/solid.scss";
@@ -8,3 +9,42 @@
 @import "../vendor/fontawesome/scss/duotone.scss";
 
 @import "node_modules/bootstrap/scss/bootstrap";
+
+
+// color overrides
+@each $color, $value in $lb-colors {
+    .btn-#{$color} {
+      background-color: var(#{$value});
+      border-color: var(#{$value});
+      
+      &:hover {
+        background-color: var(#{$value}-highlight);
+        border-color: var(#{$value}-highlight);
+      }
+    }
+}
+
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    background-color: var(--lb-body-bg);
+    transition:background-color 0.2s linear;
+}
+
+.navbar .navbar-nav .show > .nav-link, .navbar .navbar-nav .nav-link.active {
+    color: var(--lb-text-color);
+}
+
+.navbar {
+    transform: translate3d(0, 0, 0);
+    transition: 0.1s all ease-out;
+}
+
+.navbar.navbar--hidden {
+    box-shadow: none;
+    transform: translate3d(0, -100%, 0);
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none;
+}

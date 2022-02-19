@@ -1,1 +1,24 @@
+:root {
+  --lb-primary: #a641b9;
+  --lb-primary-highlight: #ba58cd;
+
+  --lb-body-bg: #f1f1f1;
+  --lb-text-color: #222;
+}
+
+body[data-theme='dark'] {
+  --lb-body-bg: #222;
+  --lb-text-color: #FFF;
+}
+
+$lb-colors: (
+  "primary":    --lb-primary
+);
+
+//fontawesome
 $fa-font-path: "../vendor/fontawesome/webfonts";
+
+// buttons
+$btn-padding-y: 0.5rem;
+$btn-padding-x: 1.5rem;
+$btn-border-radius: 1.5rem;
