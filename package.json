@@ -1,0 +1,25 @@
+{
+  "name": "vue3-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "author": "Eric",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/client": "3.5.7",
+    "@vitejs/plugin-vue": "2.0.1",
+    "graphql": "16.2.0",
+    "postcss-nested": "5.0.6",
+    "vite": "2.7.13",
+    "vue": "3.2.27",
+    "vue-router": "4.0.12",
+    "vuex": "4.0.2"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "3.2.27"
+  }
+}
