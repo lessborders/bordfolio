@@ -1,0 +1,85 @@
+// color overrides
+@each $color, $value in $lb-colors {
+    .btn-#{$color} {
+      background-color: var(#{$value});
+      border-color: transparent !important;
+      transition: border-radius 0.15s linear;
+      
+      &:hover {
+        background-color: var(#{$value}-highlight);
+        border-radius: 0.5rem 2rem 2rem 2rem;
+      }
+
+      &:focus {
+        background-color: var(#{$value}-highlight);
+        outline: none !important;
+        box-shadow: none !important;
+        border-radius: 0.5rem 2rem 2rem 2rem;
+      }
+    }
+}
+
+@each $color, $value in $lb-colors {
+  .text-#{$color} {
+    color: var(#{$value}) !important;
+    text-decoration: none;
+  }
+}
+
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    background-color: var(--lb-body-bg);
+    color: var(--lb-text-color);
+    transition:background-color 0.2s linear;
+}
+
+.dropdown-menu {
+  color: var(--lb-text-color);
+  background-color: var(--lb-card-bg);
+  margin-top: 1rem !important;
+  border: none;
+}
+
+.navbar .navbar-nav .show > .nav-link, .navbar .navbar-nav .nav-link, .navbar .nav .nav-link {
+    color: var(--lb-text-color);
+}
+
+.card-bg {
+  background-color: var(--lb-card-bg);
+}
+
+//template overrides
+.container {
+  position: relative;
+}
+
+.navbar {
+    transform: translate3d(0, 0, 0);
+    transition: 0.1s all ease-out;
+  
+    .nav-link {
+      padding-right: 0.75rem !important;
+      padding-left: 0.75rem !important;
+    }
+
+    .has-megamenu{
+      position:static!important;
+    }
+    .megamenu{
+      left:0; 
+      right:0; 
+      width:100%; 
+      background: var(--lb-card-bg);
+      max-height: calc(100vh - 75px);
+      overflow:auto;
+    }
+}
+
+.navbar.navbar--hidden {
+    box-shadow: none;
+    transform: translate3d(0, -100%, 0);
+}
+
+.dropdown-toggle.custom-icon:after {
+  display:none;
+}

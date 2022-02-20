@@ -1,0 +1,14 @@
+body[data-theme='dark'] {
+    --lb-light: #333;
+    --lb-light-highlight: #444;
+  
+    --lb-body-bg: #1C1C1C;
+    --lb-text-color: #FFF;
+  
+    --lb-card-bg: #222;
+
+    .invert-dark,
+    img[src*="lessborders_logo"] {
+        filter: brightness(4.8);
+    }
+}

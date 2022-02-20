@@ -12,7 +12,7 @@ export const router = createRouter({
     {
       path: "/page2",
       name: "page2",
-      component: () => import(/* webpackChunkName: "Page2" */ "./pages/Page2.vue"),
+      component: () => import("./pages/Page2.vue"),
     },
   ],
 });

@@ -1,22 +1,19 @@
 <template>
   <nav
-    class="navbar navbar-expand-lg sticky-top"
+    class="navbar navbar-expand-lg sticky-top card-bg"
     :class="{ 'navbar--hidden': !showNavbar }"
   >
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img height="48" width="48" alt="Vue logo" src="../assets/svg/logo.svg"/>
-      </a>
+      <router-link class="navbar-brand" to="/">
+        <img class="logo" height="48" width="48" alt="Vue logo" src="https://static.lessborders.com/apps/bordfolio/bordfolio_logo.svg"/>
+      </router-link>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Create</a>
+            <router-link class="nav-link" to="/">Portfolio</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Themes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Explore</a>
+            <router-link class="nav-link" to="/explore">Explore</router-link>
           </li>
         </ul>
       </div>
@@ -25,6 +22,11 @@
         <ul class="nav">
           <li class="nav-item">
             <darkToggle/>
+          </li>
+          <li class="nav-item dropdown has-megamenu me-2">
+            <productDropdown/>
+          </li>
+          <li class="nav-item">
             <div class="btn btn-primary" aria-current="page" href="#">Sign in</div>
           </li>
         </ul>

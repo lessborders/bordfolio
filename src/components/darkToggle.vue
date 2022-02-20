@@ -2,10 +2,10 @@
 	<button
 		:title="theme == 'dark' ? 'Dark Theme' : 'Light Theme'"
 		@click="toggleTheme()"
-		class="theme btn px-3 me-2"
+		class="theme btn btn-transparent px-3"
 	>
-		<i v-if="theme === 'dark'" class="fa-solid fa-moon text-warning"></i>
-		<i v-if="theme === 'light'" class="fa-solid fa-brightness"></i>
+		<i v-if="theme === 'dark'" class="fa-duotone fa-moon text-warning fa-lg"></i>
+		<i v-if="theme != 'dark'" class="fa-duotone fa-sun-bright text-warning fa-lg"></i>
 	</button>
 </template>
 
