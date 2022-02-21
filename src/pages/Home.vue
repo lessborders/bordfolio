@@ -1,11 +1,11 @@
 <template>
-  <div>
-    hi
+  <div class="mb-auto">
+    
   </div>
 </template>
 
 <script>
   export default {
-    name: "Page2"
+    name: "Home"
   };
 </script>

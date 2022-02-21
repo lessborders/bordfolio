@@ -6,7 +6,9 @@ import { createMetaManager } from 'vue-meta'
 
 import "./darkToggle";
 
-import Header from "./components/Header.vue";
+import Header from "./layouts/Header.vue";
+import Footer from "./layouts/Footer.vue";
+
 import darkToggle from "./components/darkToggle.vue";
 import productDropdown from "./components/productDropdown.vue";
 
@@ -17,8 +19,11 @@ import "bootstrap";
 
 const app = createApp(App);
 
-// global registration - can be used anywhere
+// Layouts
 app.component("Header", Header);
+app.component("Footer", Footer);
+
+// Global Components
 app.component("darkToggle", darkToggle);
 app.component("productDropdown", productDropdown); 
 

@@ -14,7 +14,6 @@
         background-color: var(#{$value}-highlight);
         outline: none !important;
         box-shadow: none !important;
-        border-radius: 0.5rem 2rem 2rem 2rem;
       }
     }
 }
@@ -81,5 +80,9 @@ body {
 }
 
 .dropdown-toggle.custom-icon:after {
-  display:none;
+  border:none !important;
+}
+
+.btn-light {
+  color: var(--lb-text-color) !important;
 }
