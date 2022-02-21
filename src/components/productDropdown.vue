@@ -1,6 +1,6 @@
 <template>
     <div>
-        <a class="btn px-2 btn-transparent dropdown-toggle custom-icon" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" >
+        <a class="btn px-3 btn-transparent dropdown-toggle custom-icon" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" >
             <i class="fa-duotone fa-grid-2"></i>
         </a>
         <div class="dropdown-menu d-end" style="width:300px" role="menu">

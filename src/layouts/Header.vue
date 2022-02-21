@@ -9,12 +9,12 @@
       </router-link>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto">
-          <li v-for="page in pages" :key="page" class="nav-item">
+          <li v-for="page in pages" :key="page" class="nav-item ms-1 me-1">
             <router-link v-if="!page.children" class="nav-link btn btn-transparent" :to="page.link">
               {{page.name}}
             </router-link>
             <div v-if="page.children" class="dropdown has-megamenu">
-              <div class="nav-link dropdown-toggle custom-icon btn btn-transparent" href="#" data-bs-toggle="dropdown">
+              <div class="nav-link dropdown-toggle custom-icon icon-right btn btn-transparent" href="#" data-bs-toggle="dropdown">
                 {{page.name}} <i class="fa-solid fa-angle-down"></i>
               </div>
               <div class="dropdown-menu megamenu" role="menu">
