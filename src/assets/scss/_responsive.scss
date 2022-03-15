@@ -1,0 +1,32 @@
+body[data-breakpoint='mobile'] {
+    footer {
+        text-align: center;
+    }
+    
+    .input-group-responsive {
+        .btn {
+            display: block;
+            width: 100%;
+            margin-top: 0.5em;
+            border-radius: 2em !important;
+
+            &:hover {
+                border-radius: 0.5rem 2rem 2rem 2rem !important;
+            }
+        }
+        .input-group-text + .form-control {
+            border-top-right-radius: 2em !important;
+            border-bottom-right-radius: 2em !important;
+        }
+    }
+    
+    .form-control, label.input-group-text, .btn {
+       font-size: 90%
+    }
+}
+
+body[data-breakpoint='tablet'] {
+}
+
+body[data-breakpoint='desktop'] {
+}

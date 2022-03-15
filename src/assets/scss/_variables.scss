@@ -1,19 +1,23 @@
 :root {
-  --lb-primary: #a641b9;
+  --lb-primary: var(--lb-purple);
   --lb-primary-highlight: #ba58cd;
   
   --lb-light: #f1f1f1;
   --lb-light-highlight: #f6f6f6;
 
-  --lb-body-bg: #f1f1f1;
-  --lb-text-color: #222;
-  
-  --lb-card-bg: #ffff;
+  --lb-link-color: var(--lb-primary);
+  --lb-link-highlight-color: var(--lb-primary);
 }
 
 $lb-colors: (
   "primary": --lb-primary,
   "light": --lb-light,
+  "red": --lb-red,
+  "purple": --lb-purple,
+  "blue": --lb-blue,
+  "green": --lb-green,
+  "orange": --lb-orange,
+  "black": --lb-bacl,
   "body": --lb-text-color,
   "transparent": transparent
 );

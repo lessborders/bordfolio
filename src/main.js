@@ -25,7 +25,7 @@ app.component("Footer", Footer);
 
 // Global Components
 app.component("darkToggle", darkToggle);
-app.component("productDropdown", productDropdown); 
+app.component("productDropdown", productDropdown);
 
 app.use(createStore(store));
 app.use(router);

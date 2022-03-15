@@ -1,18 +1,20 @@
 import { createRouter, createWebHistory } from "vue-router";
-import pageHome from "./pages/Home.vue";
+
+const Home = () => import(/* webpackChunkName: "home" */ './pages/Home.vue');
 
 export const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
       path: "/",
-      name: "Home",
-      component: pageHome,
+      name: "home",
+      component: Home,
     }
   ],
 });
 
 router.beforeEach((to, from, next) => {
   console.log({to, from});
+  window.scrollTo(0, 0)
   next();
 });
