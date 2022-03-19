@@ -1,5 +1,4 @@
 @import "_variables.scss";
-@import "_fonts.scss";
 
 @import "_dark.scss";
 
@@ -157,4 +156,8 @@ footer {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-box-decoration-break: clone;
+}
+
+.meta {
+  color: var(--lb-meta-color);
 }
