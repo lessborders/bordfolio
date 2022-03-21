@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 import { createStore } from "vuex";
 import { router } from "./router";
-import { store } from "./store";
+import store from "./store";
 import { createMetaManager } from 'vue-meta'
 
 import "./darkToggle";

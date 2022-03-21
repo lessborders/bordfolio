@@ -41,9 +41,9 @@
               <productDropdown/>
             </li>
             <li class="ms-2">
-              <a class="btn btn-primary" aria-current="page" href="https://cloud.lessborders.com/auth/signin">
-                  <i class="fa-duotone fa-user-alien"></i> <div class=" ps-2 d-none d-sm-inline">Sign in</div>
-              </a>
+              <router-link class="btn btn-primary" aria-current="page" :to="{ name: 'login' }">
+                <i class="fa-duotone fa-user-alien"></i> <div class=" ps-2 d-none d-sm-inline">Sign in</div>
+              </router-link>
             </li>
           </ul>
         </div>
