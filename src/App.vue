@@ -4,7 +4,9 @@
         <template v-slot:title="{ content }">{{ content ? `${content} · bordfolio` : `bordfolio` }}</template>
       </metainfo>
     <Header/>
-    <router-view></router-view>
+    <div id="page" class="d-flex col mx-auto">
+      <router-view></router-view>
+    </div>
     <Footer/>
   </div>
 </template>
