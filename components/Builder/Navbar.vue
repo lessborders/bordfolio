@@ -17,7 +17,7 @@
               src="https://static.lessborders.com/apps/bordfolio/bordfolio_logo.svg"
             />
             <span class="h6 d-none d-md-inline-block ms-3 my-auto">
-              <span class="text-text">{{ app.name }}</span>
+              <span class="text-primary">{{ app.name }}</span>
             </span>
           </NuxtLink>
         </slot>

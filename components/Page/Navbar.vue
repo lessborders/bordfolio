@@ -62,7 +62,7 @@
               alt="Less Borders Logo"
               src="https://static.lessborders.com/apps/bordfolio/bordfolio_logo.svg"
             />
-            <span class="ms-2">Bordfolio</span>
+            <span class="ms-2 text-primary">Bordfolio</span>
           </NuxtLink>
           <button
             type="button"
