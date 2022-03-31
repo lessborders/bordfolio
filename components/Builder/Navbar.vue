@@ -10,7 +10,7 @@
             class="navbar-brand me-2 me-lg-3 d-flex"
           >
             <img
-              class="invert-dark logo"
+              class="logo"
               height="42"
               width="42"
               alt="Less Borders Logo"

@@ -56,7 +56,7 @@
             class="offcanvas-title text-body h6 mobileMenuToggle"
           >
             <img
-              class="invert-dark logo"
+              class="logo"
               height="42"
               width="42"
               alt="Less Borders Logo"
