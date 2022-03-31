@@ -1,0 +1,34 @@
+body[data-theme='dark'] {
+    --lb-light: #1C1C1D;
+    --lb-light-highlight: #252526;
+  
+    --lb-body-bg: #151516;
+    --lb-text-color: #FFF;
+  
+    --lb-card-bg: #19191a;
+    --lb-border-color: #252526;
+
+    --lb-input-bg: var(--lb-card-bg);
+    --lb-input-border: #252525;
+
+    .invert-dark,
+    img[src*="lessborders_logo"] {
+        filter: brightness(6.5);
+    }
+
+    .invert-dark,
+    img[src*="lessborders_logo"] {
+        filter: brightness(6.5);
+    }
+
+    .form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-select ~ label {
+        color: var(--lb-text-color);
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active  {
+        -webkit-box-shadow: 0 0 0 300px #353835 inset !important;
+        -webkit-text-fill-color: var(--lb-text-color) !important;
+    }
+}

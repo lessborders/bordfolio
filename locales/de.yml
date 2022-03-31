@@ -1,0 +1,35 @@
+components:
+  settings:
+    title: Einstellungen
+  language_switcher:
+    change_language: Sprache
+    en: English
+    de: Deutsch
+  theme_switcher:
+    theme: Theme
+    change_theme: Theme
+    light: Hell
+    dark: Dunkel
+    system: System
+  footer:
+    connect_with_us: Finden Sie uns auf
+pages:
+  index:
+    title: Startseite
+  portfolio:
+    nav: Portfolio
+    title: Portfolio
+  login:
+    nav: Einloggen
+  contact:
+    nav: Kontakt
+    title: Kontakt
+  legal:
+    nav: Impressum
+    title: Impressum
+    terms:
+      nav:  AGB
+      title: Allgemeine Geschäftsbediungen (AGB)
+    privacy:
+      nav: Datenschutz
+      title: Datenschutzerklärung von

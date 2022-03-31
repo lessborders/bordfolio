@@ -1,0 +1,35 @@
+components:
+  settings:
+    title: Settings
+  language_switcher:
+    change_language: Language
+    en: English
+    de: Deutsch
+  theme_switcher:
+    theme: Theme
+    change_theme: Theme
+    light: Light
+    dark: Dark
+    system: System
+  footer:
+    connect_with_us: Connect with us
+pages:
+  index:
+    title: Homepage
+  portfolio:
+    nav: Portfolio
+    title: Portfolio
+  login:
+    nav: Sign in
+  contact:
+    nav: Contact
+    title: Contact
+  legal:
+    nav: Legal notice
+    title: Legal notice
+    terms:
+      nav: Terms of Service
+      title: Terms of Service
+    privacy:
+      nav: Privacy policy
+      title: Data protection declaration of
