@@ -1,16 +1,4 @@
 body[data-theme='dark'] {
-    --lb-light: #1f1f23;
-    --lb-light-highlight: #252529;
-  
-    --lb-body-bg: #151516;
-    --lb-text-color: #FFF;
-  
-    --lb-card-bg: #19191a;
-    --lb-border-color: #252526;
-
-    --lb-input-bg: var(--lb-card-bg);
-    --lb-input-border: #252529;
-
     .invert-dark,
     img[src*="lessborders_logo"] {
         filter: brightness(6.5);
