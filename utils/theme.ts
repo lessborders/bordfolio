@@ -13,7 +13,7 @@ export const availableThemes: {
 
 export function ThemeManager() {
   // composable
-  const themeUserSetting = useCookie<IThemeSettingOptions>('theme')
+  const themeUserSetting = useCookie<IThemeSettingOptions>('theme', { path: "/" })
 
   // methods
   const getUserSetting = (): IThemeSettingOptions =>
@@ -32,10 +32,10 @@ export function ThemeManager() {
 
   // state
   const themeSetting = useState<IThemeSettingOptions>('theme.setting', () =>
-    getUserSetting()
+    getUserSetting(), { path: "/" }
   )
   const themeCurrent = useState<ITheme>('theme.current', () =>
-    process.client ? getSystemTheme() : 'light'
+    process.client ? getSystemTheme() : 'light', { path: "/" }
   )
 
   // wathcers

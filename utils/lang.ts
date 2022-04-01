@@ -24,7 +24,7 @@ export const availableLocales: ILocales = {
 export function LanguageManager() {
   // composable
   const { locale } = useI18n()
-  const localeUserSetting = useCookie('locale')
+  const localeUserSetting = useCookie('locale', { path: '/' })
 
   // methods
   const getSystemLocale = (): string => {
