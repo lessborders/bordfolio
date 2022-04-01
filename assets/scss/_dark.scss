@@ -1,6 +1,6 @@
 body[data-theme='dark'] {
-    --lb-light: #1C1C1D;
-    --lb-light-highlight: #252526;
+    --lb-light: #1f1f23;
+    --lb-light-highlight: #252529;
   
     --lb-body-bg: #151516;
     --lb-text-color: #FFF;
@@ -9,7 +9,7 @@ body[data-theme='dark'] {
     --lb-border-color: #252526;
 
     --lb-input-bg: var(--lb-card-bg);
-    --lb-input-border: #252525;
+    --lb-input-border: #252529;
 
     .invert-dark,
     img[src*="lessborders_logo"] {
