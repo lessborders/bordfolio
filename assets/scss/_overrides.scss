@@ -54,6 +54,7 @@ body {
   background-color: var(--lb-body-bg);
   color: var(--lb-text-color);
   word-break: break-word;
+  overflow-x: hidden;
 }
 
 a {

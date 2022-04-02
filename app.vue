@@ -29,16 +29,5 @@ if (process.client) {
       mobileMenuOffcanvas.toggle()
     })
   }
-
-  const settingsMenuOffcanvas = new bootstrap.Offcanvas(
-    document.getElementById('settingsMenu')
-  )
-  const settingsMenuToggles =
-    document.getElementsByClassName('settingsMenuToggle')
-  for (let i = 0; i < settingsMenuToggles.length; i++) {
-    settingsMenuToggles[i].addEventListener('click', function () {
-      settingsMenuOffcanvas.toggle()
-    })
-  }
 }
 </script>
