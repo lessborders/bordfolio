@@ -18,9 +18,9 @@ export default defineNuxtRouteMiddleware((to, from) => {
         overridePrev = true
       }
       const fromFullPath = new URL(from.fullPath, window.location.href).href
-      let newUrl = cloudBaseUrl + '/auth/signin/?redirect_url=' + toFullPath
+      let newUrl = cloudBaseUrl + '/auth/signin/?redirectUrl=' + toFullPath
       if(toFullPath != fromFullPath || overridePrev) {
-        newUrl += '&previous_url=' + fromFullPath
+        newUrl += '&previousUrl=' + fromFullPath
       }
       window.location.href = newUrl
       return navigateTo(from.fullPath)
